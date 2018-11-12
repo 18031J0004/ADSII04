@@ -81,7 +81,7 @@ public String toString() {
         s.append(b[v] + ": ");
         //System.out.println(v);
         for (int w : adj[v]) {
-        	System.out.println("v val:"+v);
+        	//System.out.println("v val:"+v);
        
          s.append(b[w] + " ");
         }
@@ -159,15 +159,24 @@ class GraphMatrix implements Graph
 	    	}
 	    	//System.out.println("Matric"+matrix.length);
 	    	if(count!=matrix.length)
-	    	for(int i=0;i<ver;i++)
+	    	{
+	    		int i=0; 
+	    	for(i=0;i<ver-1;i++)
 	    	{
 	    		int j=0;
-	    		for(;j<ver-1;j++)
+	    		for(;j<ver;j++)
 	    		{
 	    			System.out.print(matrix[i][j]+" ");
 	    		}
-	    		System.out.print(matrix[i][j]);
+	    		//System.out.print(matrix[i][j]);
 	    		System.out.println();
+	    	}
+	    	int k=0;
+	    	for(k=0;k<ver-1;k++)
+    		{
+    			System.out.print(matrix[i][k]+" ");
+    		}
+    		System.out.print(matrix[i][k]);
 	    	}
 	    	else
 	    		System.out.println("No edges");
