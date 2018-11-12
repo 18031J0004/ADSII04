@@ -7,6 +7,7 @@
  *************************************************************************/
 
 import java.util.Iterator;
+
 import java.util.NoSuchElementException;
 
 /**
@@ -28,10 +29,6 @@ public class Bag<Item> implements Iterable<Item> {
     private class Node {
         private Item item;
         private Node next;
-        Node(String i)
-        {
-        	item=new Item(i);
-        }
     }
 
    /**
