@@ -73,23 +73,23 @@ public void addEdge(int v,int w)
 	adj[w].add(v);
 }
 public String toString() {
-    StringBuilder s = new StringBuilder();
-    s.append(V + " vertices, " + E + " edges "+"\n");
-   
-    for (int v = 0; v < V; v++) {
-    	//System.out.println(b[v]);
-        s.append(b[v] + ": ");
-        //System.out.println(v);
-        for (int w : adj[v]) {
-        	//System.out.println("v val:"+v);
-       
-         s.append(b[w] + " ");
+	StringBuilder sb = new StringBuilder();
+    sb.append(V + " vertices, "
+              + E + " edges" + "\n");
+    if (E > 0) {
+        for (int i = 0; i < V; i++) {
+            sb.append(b[i] + ": ");
+            for (int j : adj[i]) {
+                sb.append(b[j] + " ");
+            }
+            sb.append("\n");
         }
-        s.append("\n");
-    }
-    return s.toString();
+        return sb.toString();
+    } else {
+        sb.append("No edges");
+        return sb.toString();
 }
-
+}
 }
 
 class GraphMatrix implements Graph

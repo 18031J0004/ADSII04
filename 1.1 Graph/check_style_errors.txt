@@ -135,10 +135,6 @@ Starting audit...
 [ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:69:27: Parameter w should be final. [FinalParameters]
 [ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:70:1: '{' at column 1 should be on the previous line. [LeftCurly]
 [ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:75:1: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:77:47: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:77:48: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:78: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:85: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:95: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:96:1: '{' at column 1 should be on the previous line. [LeftCurly]
 [ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:97:9: Missing a Javadoc comment. [JavadocVariable]
@@ -260,4 +256,4 @@ Starting audit...
 [ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:187: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\santhoshvarun\Documents\GitHub\ADSII04\ADSII04\1.1 Graph\Solution.java:188:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 229 errors.
+Checkstyle ends with 225 errors.
