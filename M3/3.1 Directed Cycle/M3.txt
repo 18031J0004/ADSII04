@@ -1,0 +1,120 @@
+Fill in the blanks 1
+
+public void addEdge(int v,int w)
+{
+	validateVertex(v);
+	validateVertex(w);
+	adj[__________].add[w];//Blank1
+	Indegree[____________]++;//Blank2
+	E++;
+}
+ANS. Blank1: v
+     Blank2: w
+
+Fill in the blanks 2
+
+private void dfs(Digraph g,int v)
+{
+	marked[v]=______________;//Blank1
+	for(int w: G.adj(v))
+	{
+		if(!marked[w])
+		{
+			edgeTo[___________]=___________;//Blank2,Blank3
+			dfs(G,____________);//Blank4
+		}
+	}
+}
+ANS. Blank1: True
+     Blank2: v
+     Blank3: w
+     Blank4: w
+
+Fill in the blanks 3
+
+private void bfs(Digraph g,int s)
+{
+	Queue<Integer> q = new Queue<Integer>();
+	marked[s]=true;
+	disTo[s]=_______0____;//Blank1
+	q.enqueue(s);
+	while(!q.isEmpty())
+	{
+	int v = ______q.deque____;//Blank2
+	for(int w: g.adj(v))
+	{
+		if(___!marked[v]____________)//Blank3
+		{
+			edgeTo[w]=v;
+			distTo[w]=distTo[v]+1;
+			marked[w]=____true_________;//Blank4
+			q.enqueue(w);
+		}
+	}
+	}
+}
+
+ANS. Blank1: 0
+     Blank2: q.dequeue
+     Blank3: !marked[v]
+     Blank4: true
+Fill in the blanks-4
+Write true/false, for the following statements.
+
+The reverse postorder of a digraph's reverse is the same as the postorder of the digraph.
+ANS. True
+Is a self-loop a cycle?
+ANS. True
+The postorder of a digraph's reverse is the topological order.
+ANS. True
+A directed acyclic graph (or DAG) is a digraph with no directed cycles.
+ANS. False
+The indegree of a vertex is the number of edges pointing from it. The outdegree of a vertex is the number of edges pointing to it.
+ANS. False
+Each vertex of a Digraph G is its own strong component.
+
+
+
+Leaning by doing-1
+What is the maximum number of edges in a digraph with V vertices and no parallel edges? What is the minimum number of edges in a digraph with V vertices, 
+none of which are isolated?
+
+ANS. The maximum number of edges are: V*V-1/2
+     The minimum number of edges are: V-1
+
+
+
+Leaning by doing-3
+Draw the adjacency list digraph representation for the input below.
+12
+16
+8 4
+2 3
+1 11
+0 6
+3 6
+10 3
+7 11
+7 8
+11 8
+2 0
+6 2
+5 2
+5 10
+3 10
+8 1
+4 1
+
+    0 1 2 3 4 5 6 7 8 9 10 11
+0   0 0 0 0 0 0 1 0 0 0 0  0 
+1   0 0 0 0 0 0 0 0 0 0 0  1
+2   1 0 0 1 0 0 0 0 0 0 0  0
+3   0 0 0 0 0 0 1 0 0 0 1  0
+4   1 0 0 0 0 0 0 0 0 0 0  0
+5   0 0 1 0 0 0 0 0 0 0 1  0
+6   0 0 1 0 0 0 0 0 0 0 0  0
+7   0 0 0 0 0 0 0 0 1 0 0  1
+8   1 0 0 0 1 0 0 0 0 0 0  0
+9   0 0 0 0 0 0 0 0 0 0 0  0
+10  0 0 0 1 0 0 0 0 0 0 0  0
+11  0 0 0 0 0 0 0 0 1 0 0  0
