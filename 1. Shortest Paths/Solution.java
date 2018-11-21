@@ -1,3 +1,4 @@
+
 import javafx.stage.Stage;
 import javafx.util.Pair;
 import java.util.Comparator;
@@ -115,53 +116,95 @@ public class Solution extends javafx.application.Application{
         }
 
         public static void main(String[] args) {
-           Scanner sc=new Scanner(System.in);
-           while (sc.hasNext())
-           {
-        	String vered =sc.nextLine();
-        	String b[]=vered.split(" ");
-            Graph graph = new Graph(Integer.parseInt(b[0]));
-            String names=sc.nextLine();
-            String name[]=names.split(" ");
-            int fr = 0;
-            int las=0;
-            for(int i=0;i<Integer.parseInt(b[1]);i++)
-            {
-            	String co=sc.nextLine();
-            	String sp[]=co.split(" ");
-            	for(int j=0;j<name.length;j++)
-            	{
-            		if(sp[0].equals(name[j]))
-            			fr=j;
-            		if(sp[1].equals(name[j]))
-            			las=j;
-            	}
-            graph.addEdge(fr, las, Integer.parseInt(sp[2]));
-            }
-            int qua=Integer.parseInt(sc.nextLine());
-            for(int i=0;i<qua;i++)
-            {
-            	String co=sc.nextLine();
-            	String sp[]=co.split(" ");
-            	for(int j=0;j<name.length;j++)
-            	{
-            		if(sp[0].equals(name[j]))
-            			fr=j;
-            		if(sp[1].equals(name[j]))
-            			las=j;
-            	}
-            	//System.out.println(fr+" "+las);
-            	//System.out.println(name[fr]+" "+name[las]);
-            		 graph.dijkstra_GetMinDistances(fr,las);
-            }
-//            graph.dijkstra_GetMinDistances(0,fr);
-           }
+//           Scanner sc=new Scanner(System.in);
+//           while (sc.hasNext())
+//           {
+//        	String vered =sc.nextLine();
+//        	String b[]=vered.split(" ");
+//            Graph graph = new Graph(Integer.parseInt(b[0]));
+//            String names=sc.nextLine();
+//            String name[]=names.split(" ");
+//            int fr = 0;
+//            int las=0;
+//            for(int i=0;i<Integer.parseInt(b[1]);i++)
+//            {
+//            	String co=sc.nextLine();
+//            	String sp[]=co.split(" ");
+//            	for(int j=0;j<name.length;j++)
+//            	{
+//            		if(sp[0].equals(name[j]))
+//            			fr=j;
+//            		if(sp[1].equals(name[j]))
+//            			las=j;
+//            	}
+//            graph.addEdge(fr, las, Integer.parseInt(sp[2]));
+//            }
+//            int qua=Integer.parseInt(sc.nextLine());
+//            for(int i=0;i<qua;i++)
+//            {
+//            	String co=sc.nextLine();
+//            	String sp[]=co.split(" ");
+//            	for(int j=0;j<name.length;j++)
+//            	{
+//            		if(sp[0].equals(name[j]))
+//            			fr=j;
+//            		if(sp[1].equals(name[j]))
+//            			las=j;
+//            	}
+//            	//System.out.println(fr+" "+las);
+//            	//System.out.println(name[fr]+" "+name[las]);
+//            		 graph.dijkstra_GetMinDistances(fr,las);
+//            }
+////            graph.dijkstra_GetMinDistances(0,fr);
+//           }
         }
     }
 
 	@Override
 	public void start(Stage arg0) throws Exception {
 		// TODO Auto-generated method stub
+        Scanner sc=new Scanner(System.in);
+        while (sc.hasNext())
+        {
+     	String vered =sc.nextLine();
+     	String b[]=vered.split(" ");
+         Graph graph = new Graph(Integer.parseInt(b[0]));
+         String names=sc.nextLine();
+         String name[]=names.split(" ");
+         int fr = 0;
+         int las=0;
+         for(int i=0;i<Integer.parseInt(b[1]);i++)
+         {
+         	String co=sc.nextLine();
+         	String sp[]=co.split(" ");
+         	for(int j=0;j<name.length;j++)
+         	{
+         		if(sp[0].equals(name[j]))
+         			fr=j;
+         		if(sp[1].equals(name[j]))
+         			las=j;
+         	}
+         graph.addEdge(fr, las, Integer.parseInt(sp[2]));
+         }
+         int qua=Integer.parseInt(sc.nextLine());
+         for(int i=0;i<qua;i++)
+         {
+         	String co=sc.nextLine();
+         	String sp[]=co.split(" ");
+         	for(int j=0;j<name.length;j++)
+         	{
+         		if(sp[0].equals(name[j]))
+         			fr=j;
+         		if(sp[1].equals(name[j]))
+         			las=j;
+         	}
+         	//System.out.println(fr+" "+las);
+         	//System.out.println(name[fr]+" "+name[las]);
+         		 graph.dijkstra_GetMinDistances(fr,las);
+         }
+//         graph.dijkstra_GetMinDistances(0,fr);
+        }
+     }
 		
-	}
+	
 }
