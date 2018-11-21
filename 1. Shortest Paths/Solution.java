@@ -3,7 +3,7 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Scanner;
-
+import javafx.application.Application;
 public class Solution {
     static class Edge {
         int source;
