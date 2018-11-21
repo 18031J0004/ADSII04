@@ -1,10 +1,11 @@
+import javafx.stage.Stage;
 import javafx.util.Pair;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Scanner;
-import javafx.application.Application;
-public class Solution {
+
+public class Solution extends javafx.application.Application{
     static class Edge {
         int source;
         int destination;
@@ -157,4 +158,10 @@ public class Solution {
            }
         }
     }
+
+	@Override
+	public void start(Stage arg0) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
 }
